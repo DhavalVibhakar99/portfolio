@@ -295,7 +295,7 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
           </p>
           
           <div className="hero-actions">
-            <a href="/assets/resume/Dhaval_Vibhakar_Resume.pdf" download="Dhaval_Vibhakar_Resume.pdf" className="play-btn">
+            <a href={getAssetPath('assets/resume/Dhaval_Vibhakar_Resume.pdf')} download="Dhaval_Vibhakar_Resume.pdf" className="play-btn">
               <Play size={24} />
               Resume
             </a>

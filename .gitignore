@@ -24,8 +24,8 @@ private/
 *secret*
 *credentials*
 
-# Personal resume (keep private)
-public/assets/resume/
+# Personal resume - allowing on GitHub for portfolio download
+# public/assets/resume/
 
 # Large files (exceed GitHub 100MB limit)
 public/assets/files_ppt/*.pptx
