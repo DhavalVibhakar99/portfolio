@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Search, Bell, Briefcase, GraduationCap, Calendar, Menu, X } from 'lucide-react'
 import { resumeData } from '../data/resumeData'
 import '../styles/TimelinePage.css'
+import { getAssetPath } from '../utils/assetPath'
 
 const TimelinePage = ({ onBack, selectedProfile, onBackToProfiles }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -122,7 +123,7 @@ const TimelinePage = ({ onBack, selectedProfile, onBackToProfiles }) => {
         <div className="header-content">
           <div className="header-left">
             <div className="header-logo" onClick={onBackToProfiles}>
-              <img src="/portfolio/assets/videos/logo.png" alt="DHAVAL VIBHAKAR" className="logo-image" />
+              <img src={getAssetPath('assets/videos/logo.png')} alt="DHAVAL VIBHAKAR" className="logo-image" />
             </div>
             <nav className="header-nav">
               <button className="nav-item" onClick={onBack}>Home</button>

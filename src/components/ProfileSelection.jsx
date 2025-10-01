@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { getAssetPath } from '../utils/assetPath'
 
 const ProfileSelection = ({ onProfileSelect }) => {
   const [gotModeEnabled, setGotModeEnabled] = useState(false)
@@ -8,7 +9,7 @@ const ProfileSelection = ({ onProfileSelect }) => {
   const audioRef = useRef(null)
 
   // Single video source with correct path for production
-  const videoSource = '/portfolio/assets/videos/hbo_video.mp4'
+  const videoSource = getAssetPath('assets/videos/hbo_video.mp4')
 
   const profiles = [
     {
@@ -281,7 +282,7 @@ const ProfileSelection = ({ onProfileSelect }) => {
         loop
         preload="metadata"
       >
-        <source src="/portfolio/assets/audio/got_audio.mp3" type="audio/mpeg" />
+        <source src={getAssetPath('assets/audio/got_audio.mp3')} type="audio/mpeg" />
         {/* Add your GoT ambient music files here */}
       </audio>
 

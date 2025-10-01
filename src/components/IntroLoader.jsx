@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import '../styles/IntroLoader.css'
+import { getAssetPath } from '../utils/assetPath'
 
 const IntroLoader = ({ onComplete }) => {
   const [stage, setStage] = useState('initial') // initial, animating, fading
@@ -7,7 +8,7 @@ const IntroLoader = ({ onComplete }) => {
 
   useEffect(() => {
     // Preload audio with correct path for production
-    audioRef.current = new Audio('/portfolio/assets/audio/hbo-mp3cut.mp3')
+    audioRef.current = new Audio(getAssetPath('assets/audio/hbo-mp3cut.mp3'))
     audioRef.current.preload = 'auto'
   }, [])
 

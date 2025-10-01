@@ -5,6 +5,7 @@ import ExperienceModal from './ExperienceModal'
 import HireMeModal from './HireMeModal'
 import CertificationModal from './CertificationModal'
 import { certifications } from '../data/resumeData'
+import { getAssetPath } from '../utils/assetPath'
 
 const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -74,7 +75,7 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
         {
           id: 1,
           title: 'Integrated CCTV Surveillance System',
-          image: '/portfolio/assets/videos/cctv-surveillance.jpg',
+          image: getAssetPath('assets/videos/cctv-surveillance.jpg'),
           badge: 'PUBLISHED',
           description: 'Computer Vision • IJEAT Publication'
         },
@@ -108,7 +109,7 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
           id: 5,
           experienceId: 'dual-fuel',
           title: 'Dual Fuel Corp',
-          image: '/portfolio/assets/videos/DualFuel_Logo.png',
+          image: getAssetPath('assets/videos/DualFuel_Logo.png'),
           badge: 'CURRENT',
           description: 'Data Analyst • July 2023 - Present'
         },
@@ -116,21 +117,21 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
           id: 6,
           experienceId: 'pace-career-services',
           title: 'Pace University',
-          image: '/portfolio/assets/videos/pace-logo.jpeg',
+          image: getAssetPath('assets/videos/pace-logo.jpeg'),
           description: 'Career Services Intern • Sept 2022 - Dec 2022'
         },
         {
           id: 7,
           experienceId: 'nys-ogs',
           title: 'NYS Office of General Services',
-          image: '/portfolio/assets/videos/nys-ogs.png',
+          image: getAssetPath('assets/videos/nys-ogs.png'),
           description: 'Data Analyst Intern • June 2022 - Sept 2022'
         },
         {
           id: 8,
           experienceId: 'insight-business',
           title: 'Insight Business Machine',
-          image: '/portfolio/assets/videos/insight-logo.svg',
+          image: getAssetPath('assets/videos/insight-logo.svg'),
           description: 'Data Analyst Intern • March 2020 - April 2021'
         }
       ]
@@ -141,7 +142,7 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
         id: `cert-${cert.id}`,
         certificationId: cert.id,
         title: cert.title,
-        image: cert.logo || '/portfolio/assets/certifications/' + cert.id + '.png',
+        image: cert.logo || getAssetPath('assets/certifications/' + cert.id + '.png'),
         badge: cert.type === 'Professional Certification' ? 'CERTIFIED' :
                cert.type === 'Research Publication' ? 'PUBLISHED' :
                cert.type === 'Professional Certificate Program' ? 'COMPLETED' : 'VERIFIED',
@@ -188,7 +189,7 @@ const MainPortfolio = ({ selectedProfile, onBackToProfiles, onViewTimeline }) =>
         <div className="header-content">
           <div className="header-left">
             <div className="header-logo" onClick={onBackToProfiles}>
-              <img src="/portfolio/assets/videos/logo.png" alt="DHAVAL VIBHAKAR" className="logo-image" />
+              <img src={getAssetPath('assets/videos/logo.png')} alt="DHAVAL VIBHAKAR" className="logo-image" />
             </div>
             <nav className="header-nav">
               <button className="nav-item">Home</button>
