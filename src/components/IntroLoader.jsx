@@ -6,8 +6,8 @@ const IntroLoader = ({ onComplete }) => {
   const audioRef = useRef(null)
 
   useEffect(() => {
-    // Preload audio
-    audioRef.current = new Audio('/assets/audio/hbo-mp3cut.mp3')
+    // Preload audio with correct path for production
+    audioRef.current = new Audio('/portfolio/assets/audio/hbo-mp3cut.mp3')
     audioRef.current.preload = 'auto'
   }, [])
 

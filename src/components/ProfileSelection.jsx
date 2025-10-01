@@ -7,8 +7,8 @@ const ProfileSelection = ({ onProfileSelect }) => {
   const videoRef = useRef(null)
   const audioRef = useRef(null)
 
-  // Single video source
-  const videoSource = '/assets/videos/hbo_video.mp4'
+  // Single video source with correct path for production
+  const videoSource = '/portfolio/assets/videos/hbo_video.mp4'
 
   const profiles = [
     {
@@ -281,7 +281,7 @@ const ProfileSelection = ({ onProfileSelect }) => {
         loop
         preload="metadata"
       >
-        <source src="/assets/audio/got_audio.mp3" type="audio/mpeg" />
+        <source src="/portfolio/assets/audio/got_audio.mp3" type="audio/mpeg" />
         {/* Add your GoT ambient music files here */}
       </audio>
 

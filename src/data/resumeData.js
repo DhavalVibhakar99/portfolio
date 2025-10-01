@@ -1,4 +1,7 @@
 // Resume Data - Single Source of Truth
+// Helper function for asset paths in production
+const getAssetPath = (path) => `/portfolio${path}`
+
 export const resumeData = {
   personal: {
     name: "Dhaval Vibhakar",
@@ -18,7 +21,7 @@ export const resumeData = {
     {
       id: "dual-fuel",
       company: "Dual Fuel Corp",
-      logo: "/assets/videos/DualFuel_Logo.png",
+      logo: getAssetPath("/assets/videos/DualFuel_Logo.png"),
       position: "Data Analyst",
       startDate: "2023-07",
       endDate: null, // null means current
@@ -36,7 +39,7 @@ export const resumeData = {
     {
       id: "pace-career-services",
       company: "Pace University",
-      logo: "/assets/videos/pace-logo.jpeg",
+      logo: getAssetPath("/assets/videos/pace-logo.jpeg"),
       position: "Career Service Operations And Employer Relations Intern",
       startDate: "2022-09",
       endDate: "2022-12",
@@ -54,7 +57,7 @@ export const resumeData = {
     {
       id: "nys-ogs",
       company: "NYS Office of General Services",
-      logo: "/assets/videos/nys-ogs.png",
+      logo: getAssetPath("/assets/videos/nys-ogs.png"),
       position: "Data Analyst Intern",
       startDate: "2022-06",
       endDate: "2022-09",
@@ -72,7 +75,7 @@ export const resumeData = {
     {
       id: "insight-business",
       company: "Insight Business Machine",
-      logo: "/assets/videos/insight-logo.svg",
+      logo: getAssetPath("/assets/videos/insight-logo.svg"),
       position: "Data Analyst Intern",
       startDate: "2020-03",
       endDate: "2021-04",
@@ -92,7 +95,7 @@ export const resumeData = {
     {
       id: "cctv-surveillance",
       title: "Integrated CCTV Surveillance System for Public Transportation",
-      image: "/assets/videos/cctv-surveillance.jpg",
+      image: getAssetPath("/assets/videos/cctv-surveillance.jpg"),
       category: "Computer Vision & Security",
       description: "Published research on integrated CCTV system for crime detection and object identification in railway stations",
       details: {
@@ -509,7 +512,7 @@ export const resumeData = {
       name: "AWS Solutions Architect - Associate",
       issuer: "Amazon Web Services",
       date: "2023",
-      image: "/assets/videos/aws.jpeg",
+      image: getAssetPath("/assets/videos/aws.jpeg"),
       skillIds: ["aws"],
       credentialUrl: null
     }
@@ -566,7 +569,7 @@ export const certifications = [
     issueDate: "2025-08-10",
     credentialId: "6c0f111b3e3646a19c377d1f1ab4d2a0",
     badgeUrl: "https://www.credly.com/badges/7f11a602-6448-4fe1-ba5a-cc0e606f4a0d",
-    logo: "/assets/videos/aws.jpeg",
+    logo: getAssetPath("/assets/videos/aws.jpeg"),
     type: "Professional Certification",
     skills: ["AWS Architecture", "Cloud Computing", "EC2", "S3", "RDS", "Lambda", "CloudFormation", "VPC", "IAM", "Cloud Security"],
     story: {

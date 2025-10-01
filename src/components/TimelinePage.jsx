@@ -122,7 +122,7 @@ const TimelinePage = ({ onBack, selectedProfile, onBackToProfiles }) => {
         <div className="header-content">
           <div className="header-left">
             <div className="header-logo" onClick={onBackToProfiles}>
-              <img src="/assets/videos/logo.png" alt="DHAVAL VIBHAKAR" className="logo-image" />
+              <img src="/portfolio/assets/videos/logo.png" alt="DHAVAL VIBHAKAR" className="logo-image" />
             </div>
             <nav className="header-nav">
               <button className="nav-item" onClick={onBack}>Home</button>
