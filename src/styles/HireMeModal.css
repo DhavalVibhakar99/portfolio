@@ -61,6 +61,13 @@
   z-index: 1;
 }
 
+.hire-modal-close svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  stroke: currentColor;
+}
+
 .hire-modal-close:hover {
   color: #fff;
 }

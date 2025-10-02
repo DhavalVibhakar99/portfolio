@@ -59,6 +59,13 @@
   z-index: 10002;
 }
 
+.cert-modal-close svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  stroke: currentColor;
+}
+
 .cert-modal-close:hover {
   background: #0066cc;
   color: #fff;
