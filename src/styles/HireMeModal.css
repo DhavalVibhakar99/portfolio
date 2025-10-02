@@ -65,7 +65,7 @@
   width: 24px;
   height: 24px;
   stroke-width: 2;
-  stroke: currentColor;
+  stroke: #ffffff;
 }
 
 .hire-modal-close:hover {
